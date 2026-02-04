@@ -1,12 +1,25 @@
 import leia from "readline-sync";
 import { colors } from "../src/util/colors";
-
+import { Conta } from "../src/model/Conta";
 //Menu 
 
 
 export function main(){
     let opcao : number;
+
+    //instanciar objetos da classe conta
+    const c1 = new Conta(1,1234,"sofia",1,100000.00);
+    c1.visualizar();
+
+    //teste do método sacar
+    console.log("sacar 100,00",c1.sacar(100.00));
+    console.log("sacar 100,00",c1.sacar(20000.00));
+    console.log("sacar 100,00",c1.sacar(0));
     
+        
+
+
+
     do{
         console.log(colors.bg.white,colors.fg.bluestrong);
         console.log("*".repeat(40));
