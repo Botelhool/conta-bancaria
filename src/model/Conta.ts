@@ -1,5 +1,5 @@
 import { colors } from "../util/colors";
-export class Conta{
+export abstract class Conta{
     //atributos da classe
     // _ serve para identificar os atributos
     private _numero: number;
@@ -80,6 +80,11 @@ export class Conta{
      * Setter saldo
      * @param {number} value
      */
+
+
+
+
+
 	public set saldo(value: number) {
 		this._saldo = value;
 	}
